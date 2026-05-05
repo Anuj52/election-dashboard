@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Electoral Analytics Dashboard
+
+A high-performance, interactive election analytics dashboard designed to compare and visualize assembly election data (focusing on West Bengal and Kerala). Built with Next.js, React, and Tailwind CSS.
+
+## Features
+
+- **Interactive Maps**: State-wide choropleth maps with detailed, constituency-level data tooltips.
+- **Data Explorer**: Comprehensive, filterable, and sortable data tables for deep dives into constituency results.
+- **Swing Modeler**: A "What-If" uniform swing calculator to forecast potential outcomes based on vote share changes.
+- **Deletion Risk Analysis**: Identifies and visualizes vulnerable constituencies based on historical deletion data.
+- **Dynamic Visualizations**: Including donut charts for seat shares and interactive scatter plots for margin analysis.
+- **Responsive Design**: Fully mobile-responsive interface utilizing a sleek, modern UI with Tailwind CSS.
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **UI Library**: [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Mapping**: [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Data Parsing**: [PapaParse](https://www.papaparse.com/)
 
 ## Getting Started
 
@@ -16,21 +37,14 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Data Processing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application expects standardized CSV files placed in the `public/data` directory containing constituency-level results for 2021 and 2026.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions, issues, and feature requests are welcome. Feel free to check the issues page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
